@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Context Menu Translate</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="cmt.css">
+	</head>
+
+	<body>
+		<div class="cmt-body-wrap">
+			<div class="cmt-modal-header">
+				<h1 class="cmt-logo">
+					<img class="cmt-logo-icon" src="images/cmt-logo.png" />
+					<h4 class="cmt-title">Context Menu Translate</h4>
+				</h1>
+			</div>
+			<div class="cmt-modal-content">
+				<p>Easily Translate Text Via Context Menu</p>
+			</div>
+			<div class="cmt-select-container">
+				<label class="cmt-select-labels" for="cmt-detect-language">From:</label>
+				<select class="cmt-language-select" name="cmt-detect-language" id="cmt-default-detect-language">
+				</select>
+	
+				<label class="cmt-select-labels" for="cmt-translate-language">To:</label>
+				<select class="cmt-language-select" name="cmt-translate-language" id="cmt-default-translate-language">
+				</select>
+			</div>
+			
+	
+			<div class="cmt-modal-icons">
+				<div class="cmt-icons-container">
+					<div class="cmt-flex">
+						<a href="https://github.com/Mc17fl/context-menu-translate" target="_blank">
+						<i class="fa fa-github" style="color:darksalmon"></i>
+						</a>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+
+		<footer class="cmt-footer">
+			<p class="cmt-footer-tag">&copy; Matteo Caglioti 2021.</p>
+			<script src="popup.js"></script>
+
+		</footer>
+	</body>
+</html>
