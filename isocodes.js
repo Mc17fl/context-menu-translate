@@ -4,7 +4,7 @@
 */
 class IsoCodes {
     constructor() {
-        this.iso_codes =  {
+        this.isoCodes =  {
             "ab":{
                 "name":"Abkhaz",
                 "nativeName":"аҧсуа"
