@@ -1,5 +1,6 @@
 # Context Menu Translate
 Chromium extension that allows you to translate highlighted text, accessed by an option in the browser's context menu (right-click).
+<br>
 Ability to choose detection and translation language defaults in the extension popup menu. 
 
 <p align="center">
