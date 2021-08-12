@@ -11,6 +11,7 @@ body {
 
 .cmt-body-wrap{
     padding: 10px;
+    padding-bottom: 0px;
 }
 
 h1 {
