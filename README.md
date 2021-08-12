@@ -4,7 +4,7 @@ Ability to choose detection and translation language defaults in the extension p
 
 Light and Dark Theme!
 <p align="center">
-  <img src="https://github.com/Mc17fl/context-menu-translate/blob/main/popup_example.png">
+  <img src="https://github.com/Mc17fl/context-menu-translate/blob/main/popup_themes.png">
 </p>
 
 <!-- ![popup_menu](https://github.com/Mc17fl/context-menu-translate/blob/main/popup_example.png?raw=true) -->
