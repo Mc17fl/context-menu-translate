@@ -15,6 +15,10 @@ To use this extension:
 3. On the extensions page click the button at the top of the page that says "Load unpacked" and select the extracted folder. 
 4. Enjoy!
 
+<p align="center">
+  <img src="https://github.com/Mc17fl/context-menu-translate/blob/main/translate_text.png">
+</p>
+
 Coming soon:
 - Select fields that can be filtered by text (faster access to language instead of scrolling through every option).
 - Ability to download extension from extension store.
