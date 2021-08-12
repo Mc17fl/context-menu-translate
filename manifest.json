@@ -3,16 +3,16 @@
     "name": "Context Menu Translate",
     "description": "Easy Translation Via Context Menu",
     "version": "1.0.0",
-    "icons": { "128": "icon_128.png" },
+    "icons": { "128": "cmt-logo.png" },
     "background": {
       "service_worker": "background.js"
     },
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16":"icon.png",
-        "48":"icon.png",
-        "128": "icon.png"
+        "16":"cmt-logo.png",
+        "48":"cmt-logo.png",
+        "128": "cmt-logo.png"
       }
     },
     "permissions": ["contextMenus", "storage"]
