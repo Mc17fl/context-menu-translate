@@ -94,13 +94,19 @@ img {
     width: 100px;
 }
 
-.cmt-flex:hover {
-    opacity: 0.4;
-}
-
 .cmt-flex .fa {
     font-size: 30px;
     color: #2f5876;
+}
+
+.fa.fa-github{
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.fa.fa-github:hover {
+    transition: 0.3s;
+    opacity: 0.4;
 }
 
 .cmt-footer{
