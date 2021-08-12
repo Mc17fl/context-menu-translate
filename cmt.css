@@ -128,3 +128,13 @@ img {
     text-align: center;
 }
 
+@media (prefers-color-scheme: dark) {  
+    .cmt-body-wrap {  
+        background-color: #202124;    
+        color: white;  
+    }
+    .cmt-footer{
+        background-color: #303134;
+        color: white;
+    }
+  }
