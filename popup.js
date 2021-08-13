@@ -1,3 +1,6 @@
+/*
+* Initial Setup of Select fields options and default language options/stored language options
+*/
 document.addEventListener('DOMContentLoaded', function () {
 
     let detectLanguagesSelect = document.getElementById("cmt-default-detect-language"); 
@@ -15,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let optionDetect = document.createElement('option');
             let isoCodeName = isoCodes[isoCode].name;
             optionDetect.value = isoCode;
-            optionDetect.title = isoCodeName
+            optionDetect.title = isoCodeName;
             isoCodeName = (isoCodeName.length > 13) ? isoCodeName.substring(0, 13) + "..." : isoCodeName;
             optionDetect.innerHTML = isoCodeName;
             let optionTranslate = optionDetect.cloneNode();
@@ -26,24 +29,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     chrome.storage.local.get(['defaultDetectLanguage', 'defaultTranslateLanguage'], function(data) {
-        defaultDetectLanguage =  data.defaultDetectLanguage
-        defaultTranslateLanguage = data.defaultTranslateLanguage
-        detectLanguagesSelect.value = defaultDetectLanguage
-        translateLanguagesSelect.value = defaultTranslateLanguage
-    });
+        let detectLanguagesSelect = document.getElementById("cmt-default-detect-language"); 
+        let translateLanguagesSelect = document.getElementById("cmt-default-translate-language"); 
+        defaultDetectLanguage =  data.defaultDetectLanguage;
+        defaultTranslateLanguage = data.defaultTranslateLanguage;
+        detectLanguagesSelect.value = defaultDetectLanguage;
+        translateLanguagesSelect.value = defaultTranslateLanguage;
 
-    document.getElementById("cmt-default-detect-language").addEventListener('change', function(event) {
-        chrome.storage.local.set({
-            defaultDetectLanguage: event.target.value
-        });
+        let detectLanguageInputText = detectLanguagesSelect.options[detectLanguagesSelect.selectedIndex].text;
+        let translateLanguageInputText = translateLanguagesSelect.options[translateLanguagesSelect.selectedIndex].text;
+        let detectLanguagesInput = document.getElementById("cmt-detect-language-search"); 
+        let translateLanguagesInput = document.getElementById("cmt-translate-language-search"); 
+        detectLanguagesInput.value = detectLanguageInputText;
+        translateLanguagesInput.value = translateLanguageInputText;
     });
-    
-    document.getElementById("cmt-default-translate-language").addEventListener('change', function(event) {
-        chrome.storage.local.set({
-            defaultTranslateLanguage: event.target.value
-        });
-    });
-
 });
 
 

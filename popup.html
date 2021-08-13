@@ -14,6 +14,10 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="cmt.css">
+		<script src="popup.js"></script>
+		<script src="eventHandlers.js"></script>
+
+
 	</head>
 
 	<body>
@@ -34,10 +38,12 @@
 			<div class="cmt-select-container">
 				<label class="cmt-select-labels" for="cmt-detect-language">Translate From:</label>
 				<select class="cmt-language-select" name="cmt-detect-language" id="cmt-default-detect-language">
+					<input id="cmt-detect-language-search" class="cmt-language-search-field" type="text">
 				</select>
 	
 				<label class="cmt-select-labels" for="cmt-translate-language">To:</label>
 				<select class="cmt-language-select" name="cmt-translate-language" id="cmt-default-translate-language">
+					<input id="cmt-translate-language-search" class="cmt-language-search-field" type="text">
 				</select>
 			</div>
 			
@@ -45,10 +51,9 @@
 				<div class="cmt-icons-container">
 					<div class="cmt-flex">
 						<a href="https://github.com/Mc17fl/context-menu-translate" target="_blank">
-						<i class="fa fa-github" style="color:darksalmon"></i>
+							<i class="fa fa-github" style="color:darksalmon"></i>
 						</a>
 					</div>
-	
 				</div>
 			</div>
 		</div>
@@ -56,7 +61,6 @@
 		<footer class="cmt-footer">
 			<p class="cmt-footer-tag">&copy; Matteo Caglioti 2021.</p>
 			<script src="isocodes.js"></script>
-			<script src="popup.js"></script>
 		</footer>
 		
 	</body>
