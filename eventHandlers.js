@@ -31,7 +31,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.getElementById("cmt-detect-language-search").addEventListener('input', function (event) {
-        console.log(this.value);
+        let user_input = this.value
+        user_input = user_input.toLowerCase();
+        if(user_input.length<3){
+            return;
+        }
+        let select_field_values = document.getElementById("cmt-default-detect-language").childNodes;
+        for (key in select_field_values) {
+            if (select_field_values.hasOwnProperty(key)) {
+                if(typeof select_field_values[key].value != 'undefined'){
+                    let select_option_title = select_field_values[key].title
+                    select_option_title = select_option_title.toLowerCase();
+                    // if( select_option_title.indexOf(user_input) !== -1){
+                    // }                    
+                }
+            }
+        }
+        
     });
 
     document.getElementById("cmt-translate-language-search").addEventListener('input', function (event) {
